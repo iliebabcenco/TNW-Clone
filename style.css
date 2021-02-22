@@ -7,6 +7,25 @@ body {
   display: none;
 }
 
+footer {
+  margin: 0 auto;
+}
+
+.footer-nav-section {
+  color: white;
+  background-color: #131313;
+  margin: 15px 0 0 0;
+}
+
+.footer-data {
+  color: white;
+  background-color: black;
+  margin: 0;
+}
+.footer-data img {
+  width: 50px;
+}
+
 .header-tabs {
   display: flex;
   justify-content: space-between;
