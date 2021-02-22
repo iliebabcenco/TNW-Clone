@@ -2,15 +2,16 @@ body {
   margin: 0;
 }
 
-.header {
+.header  {
   width: 100%;
+  display: none;
 }
 
 .header-tabs {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   background: #131313;
+  width: 100%;
   height: 32px;
   align-items: center;
 }
@@ -48,8 +49,10 @@ body {
   margin-right: 20px;
 }
 
-nav {
+.nav-container {
   display: flex;
+  height: 50px;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -67,16 +70,26 @@ nav {
 }
 
 .logo {
-  background: url("https://lh3.googleusercontent.com/pw/ACtC-3fG5BHUm21ojhVzkkzTCC91roqzrHIfzxh2PHZ9SizvgK9S5Zh6U8nwrXwHJKjHsdy9xCDbwgQFuubGNX79N0Oezrhnya-8XAwqjvEuGA3kQrLiR0hd0yMj0VCTr0R1TunS6xOjy_Ij2QG_bSWR8SEs=w106-h80-no?authuser=0");
-  background-repeat: no-repeat;
+  /* background: url("https://lh3.googleusercontent.com/pw/ACtC-3fG5BHUm21ojhVzkkzTCC91roqzrHIfzxh2PHZ9SizvgK9S5Zh6U8nwrXwHJKjHsdy9xCDbwgQFuubGNX79N0Oezrhnya-8XAwqjvEuGA3kQrLiR0hd0yMj0VCTr0R1TunS6xOjy_Ij2QG_bSWR8SEs=w106-h80-no?authuser=0"); */
+  /* background-repeat: no-repeat; */
+  background-color: black;
+  display: block;
   width: 107px;
-  height: 80px;
+
+}
+
+.logo img {
+  width: 65%;
+  position: relative;
+  top: 30%;
+  left: 18%;
 }
 
 .article-link {
   background: #fd3;
-  padding: 5px 5px 5px 140px;
-  margin-left: -120px;
+  text-align: center;
+  line-height: 60px;
+  
 }
 
 .header-section-div {
@@ -95,26 +108,37 @@ nav {
   .logo {
     display: block;
   }
-  .header-tabs,
-  .links {
-    display: none;
-  }
+  
   .header-section-div,
   #div1-header {
     height: 230px;
     width: 98%;
     margin: 5px 10px 10px 5px;
   }
-  
 }
 
 @media only screen and (min-width: 770px) {
-  .logo {
+  .header {
+    display: block;
+  }
+  
+  .icons {
     display: none;
   }
-  .bars {
-    display: none;
+  
+  .logo img {
+    top: 40%;
   }
+
+  .nav-container {
+    height: 80px;
+  }
+
+  .article-link {
+    height: 30px;
+    line-height: 30px;
+  }
+
   .header-section {
     margin: 2px 10px 2px 10px;
     height: 450px;
@@ -124,7 +148,6 @@ nav {
     width: 33%;
     height: 220px;
     margin: 0 0 10px 0;
-    
   }
   #div1-header {
     margin: 0;
@@ -149,8 +172,9 @@ nav {
 } */
 
 @media only screen and (min-width: 1024px) {
+  
   .logo {
-    display: block;
+    display: none;
   }
   .header-section {
     height: 545px;
