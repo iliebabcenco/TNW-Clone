@@ -50,11 +50,7 @@ body {
 
 nav {
   display: flex;
-}
-
-header {
   width: 100%;
-  display: flex;
 }
 
 .icons {
@@ -83,30 +79,80 @@ header {
   margin-left: -120px;
 }
 
-@media (min-width: 768px) {
+.header-section-div {
+  box-sizing: border-box;
+  border: 1px solid red;
+  margin-bottom: 10px;
+}
+
+.header-section {
+  margin: 5px;
+}
+
+@media only screen and (min-width: 500px) {
+  .logo {
+    display: block;
+  }
+  .header-tabs,
+  .links {
+    display: none;
+  }
+  .header-section-div,
+  #div1-header {
+    height: 230px;
+    width: 98%;
+    margin: 5px 10px 10px 5px;
+  }
+  
+}
+
+@media only screen and (min-width: 770px) {
   .logo {
     display: none;
   }
   .bars {
     display: none;
   }
-}
-
-@media (max-width: 1000px) {
-  .logo {
-    display: block;
+  .header-section {
+    height: 375px;
   }
+  .header-section-div {
+    float: right;
+    width: 30%;
+    height: 49%;
+  }
+  #div1-header {
+    float: left;
+    width: 66%;
+    height: 100%;
+  }
+
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .right-panel {
     display: none;
   }
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .header-tabs,
   .links {
     display: none;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .logo {
+    display: block;
+  }
+  .header-section {
+    height: 545px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .header-section {
+    height: 480px;
+  }
+} 
