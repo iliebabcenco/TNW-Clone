@@ -2,14 +2,14 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
 }
 
 main {
   flex: 1;
 }
 
-.header  {
+.header {
   width: 100%;
   display: none;
 }
@@ -32,12 +32,34 @@ nav {
 .footer-nav-section {
   box-sizing: border-box;
   padding: 30px 0 20px 0;
-  
   background-color: #131313;
   margin: 0 auto;
   height: 160px;
   text-align: center;
   line-height: 50px;
+}
+
+.header-tabs a {
+  padding: 0 5px 0 5px;
+  text-decoration: none;
+  color: rgb(134, 134, 134);
+}
+
+.links a {
+  text-decoration: none;
+  padding: 0 5px 0 5px;
+  color: rgb(134, 134, 134);
+  text-transform: uppercase;
+}
+
+.div-data a {
+  color: gray;
+  text-decoration: none;
+}
+
+.lf-menu a {
+  color: #f42;
+  text-decoration: none;
 }
 
 .footer-nav-section li a {
@@ -55,19 +77,19 @@ nav {
 }
 
 .footer-data {
-  
   background-color: black;
   margin: 0 auto;
   height: 100px;
   text-align: center;
   line-height: 100px;
 }
+
 .footer-data img {
   width: 50px;
 }
 
 .footer-data p {
-  margin: 0px auto;
+  margin: 0 auto;
   padding-top: 40px;
   width: 70%;
   line-height: 20px;
@@ -78,10 +100,9 @@ nav {
   padding: 7px;
   margin-right: 15px;
   width: 40px;
-  
-  border: 1px solid #333333;
+  border: 1px solid #333;
   border-radius: 50%;
-  background-color: #333333;
+  background-color: #333;
   color: white;
 }
 
@@ -95,12 +116,6 @@ nav {
   font-size: 14px;
 }
 
-.header-tabs a {
-  padding: 0 5px 0 5px;
-  text-decoration: none;
-  color: rgb(134, 134, 134);
-}
-
 .header-tabs-bottom {
   display: flex;
   justify-content: space-between;
@@ -111,14 +126,6 @@ nav {
 .links {
   margin-left: 20px;
   font-size: 14px;
-}
-
-.links a {
-  text-decoration: none;
-  padding: 0 5px 0 5px;
-  text-decoration: none;
-  color: rgb(134, 134, 134);
-  text-transform: uppercase;
 }
 
 .left-panel {
@@ -153,7 +160,6 @@ nav {
   background-color: black;
   display: block;
   width: 107px;
-
 }
 
 .logo img {
@@ -167,7 +173,6 @@ nav {
   background: #fd3;
   text-align: center;
   line-height: 60px;
-  
 }
 
 .header-section-div {
@@ -179,6 +184,7 @@ nav {
 .header-section {
   margin: 0;
   padding: 0;
+  margin-top: 115px;
 }
 
 #div1-header {
@@ -200,6 +206,21 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.lf-item-header2 p {
+  position: absolute;
+  left: 75px;
+  bottom: -25%;
+  font-size: 12px;
+  color: gray;
+}
+
+.lf-item p {
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px;
 }
 
 #div1-header p,
@@ -237,7 +258,6 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  
 }
 
 .div-logo {
@@ -259,11 +279,6 @@ nav {
   margin: 0 0 15px 20px;
 }
 
-.div-data a {
-  color: gray;
-  text-decoration: none;
-}
-
 .lf-container img {
   width: 60px;
 }
@@ -276,19 +291,19 @@ nav {
 }
 
 .lf-item {
-  background-color: #FFFAF8;
+  background-color: #fffaf8;
   margin-bottom: 20px;
 }
 
 .lf-item-header1 {
-  background-color: #FF4422;
+  background-color: #f42;
   color: white;
   height: 40px;
   position: relative;
 }
 
 .lf-item-header2 {
-  background-color: #FFEBE8;
+  background-color: #ffebe8;
   height: 60px;
   position: relative;
 }
@@ -318,18 +333,15 @@ nav {
   z-index: 1;
 }
 
-.lf-item-header2 p {
-  position: absolute;
-  left: 75px;
-  bottom: -25%;
-  font-size: 12px;
-  color: gray;
-}
-
 .lf-item hr {
   background-color: #fcac9e;
   height: 1px;
   border: none;
+}
+
+.lf-item p a {
+  text-decoration: none;
+  color: rgb(158, 157, 157);
 }
 
 .lf-item .lf-item-info-div a {
@@ -348,19 +360,7 @@ nav {
 }
 
 .lf-item .lf-item-info-div {
-  margin: 20px 0px 20px 15px;
-}
-
-.lf-item p {
-  color: #333333;
-  font-size: 12px;
-  line-height: 20px;
-  padding: 10px;
-}
-
-.lf-item p a {
-  text-decoration: none;
-  color: rgb(158, 157, 157);
+  margin: 20px 0 20px 15px;
 }
 
 .lf-menu {
@@ -376,14 +376,14 @@ nav {
 }
 
 .lf-menu li {
-  margin: 0px 10px 10px 0;
+  margin: 0 10px 10px 0;
 }
 
 .lf-menu span {
   margin-left: 10px;
   font-size: 20px;
   display: none;
-  color: #FF4422;
+  color: #f42;
 }
 
 .lf-menu h4 {
@@ -392,64 +392,65 @@ nav {
   margin-bottom: 15px;
 }
 
-.lf-menu a {
-  color: #FF4422;
-  text-decoration: none;
-  
-}
-.header-section {
-  margin-top: 115px;
-}
-
 @media only screen and (min-width: 320px) {
   .logo {
     display: block;
   }
+
   .header-section-div,
   #div1-header {
     height: 230px;
     width: 98%;
     margin: 5px 10px 10px 5px;
   }
+
   .footer-data {
     text-align: center;
   }
-  
 }
 
 @media only screen and (min-width: 768px) {
   .header {
     display: block;
   }
+
   .icons {
     display: none;
   }
+
   .logo img {
     top: 40%;
   }
+
   .nav-container {
     height: 80px;
   }
+
   .article-link {
     height: 30px;
     line-height: 30px;
   }
+
   .header-section {
     margin: 2px 10px 2px 10px;
     height: 450px;
+    margin-top: 115px;
   }
+
   .header-section-div {
     float: right;
     width: 33%;
     height: 220px;
     margin: 0 0 10px 0;
   }
+
   #div1-header {
     margin: 0;
     float: left;
     width: 66%;
     height: 100%;
   }
+
   #div1-header p {
     font-size: 36px;
     bottom: 5%;
@@ -458,51 +459,56 @@ nav {
   .lf-menu ul {
     flex-direction: row;
     justify-content: flex-start;
-  } 
+  }
+
   .lf-menu span {
     display: inline;
   }
+
   .lf-container {
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
     width: 96%;
   }
+
   #lf-item4 {
     display: none;
   }
-  
+
   .lf-item {
     width: 33.33%;
     margin-right: 15px;
   }
-  .header-section {
-    margin-top: 115px;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
-  
   .logo {
     display: none;
   }
+
   .header-section {
     height: 545px;
   }
+
   .header-section-div {
     height: 267.5px;
   }
+
   .div-main-gradient,
   .div-logo {
     display: block;
   }
+
   #div1-header p {
     font-size: 48px;
     bottom: 1%;
   }
+
   #lf-item4 {
     display: block;
   }
+
   .lf-menu {
     display: flex;
     flex-direction: row;
@@ -510,10 +516,12 @@ nav {
     align-content: center;
     align-items: center;
   }
+
   .lf-menu li {
     margin-bottom: 0;
     padding-top: 30px;
   }
+
   .latest-funding-section {
     max-width: 1152px;
     margin: 0 auto;
@@ -524,7 +532,8 @@ nav {
   .header-section {
     height: 480px;
   }
+
   .header-section-div {
     height: 235px;
   }
-} 
+}
