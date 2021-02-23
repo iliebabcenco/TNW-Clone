@@ -30,9 +30,10 @@ footer {
   line-height: 50px;
 }
 
-.footer-nav-section li {
+.footer-nav-section li a {
   color: #949494;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .footer-nav-section ul {
@@ -154,7 +155,6 @@ footer {
 
 .header-section-div {
   box-sizing: border-box;
-  border: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -164,7 +164,25 @@ footer {
   padding: 0;
 }
 
-@media only screen and (min-width: 500px) {
+#div1-header {
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#div2-header {
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-26T112752.972-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#div3-header {
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 320px) {
   .logo {
     display: block;
   }
@@ -177,7 +195,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 768px) {
   .header {
     display: block;
   }
