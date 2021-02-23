@@ -2,6 +2,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
 main {
@@ -131,8 +132,6 @@ footer {
 }
 
 .logo {
-  /* background: url("https://lh3.googleusercontent.com/pw/ACtC-3fG5BHUm21ojhVzkkzTCC91roqzrHIfzxh2PHZ9SizvgK9S5Zh6U8nwrXwHJKjHsdy9xCDbwgQFuubGNX79N0Oezrhnya-8XAwqjvEuGA3kQrLiR0hd0yMj0VCTr0R1TunS6xOjy_Ij2QG_bSWR8SEs=w106-h80-no?authuser=0"); */
-  /* background-repeat: no-repeat; */
   background-color: black;
   display: block;
   width: 107px;
@@ -168,31 +167,96 @@ footer {
   background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 #div2-header {
   background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-26T112752.972-796x417.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 #div3-header {
   background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+#div1-header p,
+#div2-header p,
+#div3-header p {
+  color: white;
+  position: absolute;
+  bottom: 8%;
+  font-size: 19px;
+  letter-spacing: -1px;
+  word-spacing: -3px;
+  z-index: 5;
+  margin-left: 20px;
+  font-weight: 800;
+}
+
+.div-main-gradient {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+  position: absolute;
+  background-size: cover;
+  opacity: 0.7;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.div-gray-gradient {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+  opacity: 0.9;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  
+}
+
+.div-logo {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  right: 60%;
+  bottom: 25%;
+  display: none;
+}
+
+.div-data {
+  color: gray;
+  z-index: 4;
+  position: absolute;
+  bottom: 2%;
+  font-size: smaller;
+  margin: 0 0 15px 20px;
+}
+
+.div-data a {
+  color: gray;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 320px) {
   .logo {
     display: block;
   }
-  
   .header-section-div,
   #div1-header {
     height: 230px;
     width: 98%;
     margin: 5px 10px 10px 5px;
   }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -228,20 +292,13 @@ footer {
     width: 66%;
     height: 100%;
   }
-}
-
-/* @media only screen and (max-width: 800px) {
-  .right-panel {
-    display: none;
+  #div1-header p {
+    font-size: 36px;
+    bottom: 5%;
   }
-}
 
-@media only screen and (max-width: 750px) {
-  .header-tabs,
-  .links {
-    display: none;
-  }
-} */
+  
+}
 
 @media only screen and (min-width: 1024px) {
   
@@ -253,6 +310,14 @@ footer {
   }
   .header-section-div {
     height: 267.5px;
+  }
+  .div-main-gradient,
+  .div-logo {
+    display: block;
+  }
+  #div1-header p {
+    font-size: 48px;
+    bottom: 1%;
   }
 }
 
