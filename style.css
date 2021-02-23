@@ -20,6 +20,15 @@ footer {
   color: #949494;
 }
 
+nav {
+  position: fixed;
+  z-index: 6;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+}
+
 .footer-nav-section {
   box-sizing: border-box;
   padding: 30px 0 20px 0;
@@ -55,6 +64,13 @@ footer {
 }
 .footer-data img {
   width: 50px;
+}
+
+.footer-data p {
+  margin: 0px auto;
+  padding-top: 40px;
+  width: 70%;
+  line-height: 20px;
 }
 
 .social-part-div i {
@@ -381,6 +397,9 @@ footer {
   text-decoration: none;
   
 }
+.header-section {
+  margin-top: 115px;
+}
 
 @media only screen and (min-width: 320px) {
   .logo {
@@ -391,6 +410,9 @@ footer {
     height: 230px;
     width: 98%;
     margin: 5px 10px 10px 5px;
+  }
+  .footer-data {
+    text-align: center;
   }
   
 }
@@ -454,8 +476,9 @@ footer {
     width: 33.33%;
     margin-right: 15px;
   }
-
-
+  .header-section {
+    margin-top: 115px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -479,6 +502,21 @@ footer {
   }
   #lf-item4 {
     display: block;
+  }
+  .lf-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .lf-menu li {
+    margin-bottom: 0;
+    padding-top: 30px;
+  }
+  .latest-funding-section {
+    max-width: 1152px;
+    margin: 0 auto;
   }
 }
 
