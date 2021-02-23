@@ -1,19 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+# TNW Clone
+
+> This is a clone of TNW page.
+There I have applied semantic HTML, Embedding images, The box model, Flexbox, Floats, Positioning, media queries for responsivity.
+It has:
+- a fixed responsive navbar at the top;
+- a responsive header with three embedded images;
+- responsive latest funding boxes;
+- another navbar at footer;
+- footer data.
+
+
 ## Built With
 
-- HTML & CSS
+- HTML & CSS (media queries for responisivty)
 
 ## Authors
 
-👤 **Author**
+👤 **Ilie Babcenco**
 
-- GitHub: [@MakZ](https://github.com/MakZ)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/maksymilian-zuzel-70101a174/)
+- GitHub: [@iliebabcenco](https://github.com/iliebabcenco)
 
 ## Live Demo
 
-https://MakZ.github.io/TNW-Clone
+https://iliebabcenco.github.io/TNW-Clone/
 
 ## 🤝 Contributing
 
